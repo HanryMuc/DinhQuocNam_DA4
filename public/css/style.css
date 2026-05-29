@@ -1,0 +1,151 @@
+/* 1. ĐỊNH DẠNG CHUNG */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #222;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. HIỆU ỨNG GẠCH CHÂN MENU ACTIVE */
+.active-link {
+    position: relative;
+    font-weight: 700;
+}
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 4px;
+    width: calc(100% - 8px);
+    height: 2px;
+    background-color: #000;
+}
+
+/* 3. BỐ CỤC KHỐI SẢN PHẨM (RECOMMENDED) */
+.product-box {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border: 1px solid #e0e0e0;
+}
+
+/* 4. CLASS BỔ TRỢ */
+.fs-7 { 
+    font-size: 0.85rem; 
+}
+.text-underline {
+    text-decoration: underline !important;
+}
+
+/* 5. HIỆU ỨNG DI CHUỘT (HOVER) */
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-hidden video, 
+.overflow-hidden img {
+    transition: transform 0.4s ease;
+}
+.overflow-hidden:hover video, 
+.overflow-hidden:hover img {
+    transform: scale(1.02);
+}
+
+/* 6. CĂN CHỈNH TIÊU ĐỀ VÀ KHOẢNG CÁCH */
+.product-info h6 {
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.text-warning {
+    font-size: 0.8rem;
+}
+
+/* 7. ĐỊNH DẠNG NAVBAR ĐEN (NẾU CÓ DÙNG TRONG HEADER) */
+header .nav-link, 
+header a {
+    transition: opacity 0.3s ease;
+}
+header a:hover {
+    opacity: 0.7;
+}
+
+/* 8. ĐẢM BẢO TƯƠNG THÍCH RESPONSIVE */
+@media (max-width: 768px) {
+    .product-box {
+        padding: 20px;
+    }
+}
+
+/* Định dạng nút bấm đè lên ảnh */
+.btn-light {
+    background-color: rgba(255, 255, 255, 0.9); /* Màu trắng hơi trong suốt */
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #000; /* Đổi màu khi hover */
+    color: #fff;
+}
+
+/* Đảm bảo ảnh không bị tràn và hiệu ứng zoom mượt */
+.overflow-hidden {
+    border-radius: 0; /* Nếu bạn muốn vuông vức như mẫu */
+}
+
+/* Khoảng cách cho tiêu đề */
+h2.fw-bold {
+    letter-spacing: 2px;
+}
+
+/* Hiệu ứng hình ảnh bài blog */
+.overflow-hidden img {
+    transition: transform 0.4s ease;
+}
+.overflow-hidden:hover img {
+    transform: scale(1.03);
+}
+
+/* Khoảng cách giữa các phần trong bài blog */
+.col-md-6 p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Hiệu ứng phóng to ảnh khi di chuột vào */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-hidden img {
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.overflow-hidden:hover img {
+    transform: scale(1.05);
+}
+
+/* Định dạng chữ */
+.fw-bold {
+    font-size: 0.95rem;
+}
+
+/* Tạo khoảng cách và đổ bóng nhẹ cho khối đánh giá */
+.bg-white {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Đảm bảo sao đánh giá có màu vàng */
+.text-warning {
+    color: #ffc107 !important;
+}
+
+/* Chỉnh khoảng cách cho tiêu đề */
+h3.fw-bold {
+    letter-spacing: 1px;
+}
